@@ -1,7 +1,9 @@
 # Running deep feature flow for video recognition
 
 Run "deep feature flow for video recognition CVPR 2017"   [code](github.com/msracver/Deep-Feature-Flow.git) in Docker.   
-The default setting is for detection, if you want to see result on segmentation, uncomment and comment some corrspoding lines in Dockerfile through the comments in the Dockerfile.
+The default setting is for detection, if you want to see result on segmentation  
+1. Uncomment and comment some corrspoding lines in Dockerfile through the comments in that file.  
+2. Use python rfcn/demo.py instead of python dff_rfcn/demo.py
 
 ## Steps
 
