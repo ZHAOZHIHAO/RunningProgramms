@@ -21,9 +21,11 @@ Follow Quickstart part on https://github.com/NVIDIA/nvidia-docker
 sudo docker build -t zz:adaptive_attention .  
 5. Run docker and test the method
 (sudo) nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfolder zz:adaptive_attention /bin/bash  
-cd ~/AdaptiveAttention  
-jupyter notebook --allow-root & copy jupyter's URL to browers outside docker & chosee demo.ipynb  
+jupyter notebook --allow-root & chosee demo.ipynb  
 Change opt.checkpoint_path = 'save/coco_train.t7' to opt.checkpoint_path = 'save/model_id1_36.t7' becasue coco_train.t7 doesn't exist in their web server. I think the author updated their model, but not the demo.ipynb.  
-Modify image_path = 'visu/demo_img.jpg' because this image doesn't exist. Here is an option '/root/caffe/examples/images/cat.jpg'.
+Modify image_path = '/root/caffe/examples/images/cat.jpg' because this image doesn't exist. Here is an option /root/caffe/examples/images/cat.jpg
+
+## Output Example
+![Example](https://github.com/ZHAOZHIHAO/RunningProgramms/raw/master/running_knowing_when_to_look/imageCaption1.png)
 
 
