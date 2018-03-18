@@ -17,7 +17,7 @@ Follow Quickstart part on https://github.com/NVIDIA/nvidia-docker
     git clone https://github.com/floydhub/dl-docker.git  
     In Dockerfile.gpu, Modify -DBUILD_EXAMPLES=ON to OFF. [[The original problem ](https://github.com/floydhub/dl-docker/issues/77)]  
     Build the GPU base docker: docker build -t floydhub/dl-docker:gpu -f Dockerfile.gpu .
-4. Build Mask RCNN docker  
+4. Build adaptive_attention docker  
 sudo docker build -t zz:adaptive_attention .  
 5. Run docker and test the method
 (sudo) nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfolder zz:adaptive_attention /bin/bash  
