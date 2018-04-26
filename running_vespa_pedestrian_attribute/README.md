@@ -20,7 +20,7 @@ sudo docker build -t zz:vespa .
 5. Run docker  
 sudo nvidia-docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY zz:vespa /bin/bash  
 6. Test your own images  
-  i. put all your images in images directory  
+  i. put all your images in "images" directory and rebuild vespa docker and run it  
   ii. cd /vespa/utils && python inference_zz.py  
   iii. results(attributes confidences) are stored in image along with the original image in /vespa/utils  directory, named as out*.jpg  
 7. Evaluate on PETA dataset  
