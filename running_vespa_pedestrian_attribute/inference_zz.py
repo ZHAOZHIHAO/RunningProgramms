@@ -81,8 +81,8 @@ def run_evaluation(fname_model, fname_weights, fname_testdata, path_out, fname_m
                 img = scipy.misc.imresize(img, (256,256), interp='bicubic')
                 img = img[:, :, :3]
                 img = np.subtract(img, mean)
-                img = scipy.misc.imresize(img, (227,227), interp='bicubic')
-                #img = img[15:15+227, 15:15+227, :]
+                #img = scipy.misc.imresize(img, (227,227), interp='bicubic')
+                img = img[15:15+227, 15:15+227, :]
                 img = img[:,:,::-1]
                 img = img.transpose((2,0,1))
                 batch.append(img)
